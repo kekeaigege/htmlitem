@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      img:hover {
+           /* transform: all 5s; */
+            /* -webkit-filter: none; */
+      }
+      .img {
+        /* 设置滤镜效果 1是全灰*/
+        -webkit-filter: grayscale(1);
+       
+      }
+      .img_2 {
+        /* 亮度 */
+        -webkit-filter: brightness(0);
+      }
+      .img_3{
+        /* 老旧黄   */
+          -webkit-filter: sepia(1);
+      }
+      .img_4{
+          /* 模糊度 */
+          -webkit-filter: blur(50px);
+      }
+      .img_5{
+          /* 对比度，如果调成0就没有任何对比度，变成灰色 */
+          -webkit-filter: contrast(0);
+      }
+      .img_6{
+          /* 饱和度 */
+          -webkit-filter: saturate(2);
+      }
+      .img_7{
+          /* 胶片底色 */
+          -webkit-filter: invert(1);
+      }
+      .img_8{
+          /* 整体色相旋转 */
+          -webkit-filter: hue-rotate(90deg);
+    }
+    .img_9{
+        -webkit-filter: brightness(100) grayscale(1);
+        transition: all 15s;
+    }
+    .img_9:hover{
+        -webkit-filter: brightness(1) grayscale(1);
+    }
+    </style>
+  </head>
+  <body>
+      <img src="魔女.jpg" alt="" class="img_9">
+  </body>
+</html>
